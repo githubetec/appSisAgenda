@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mniCadastros"
+        android:title="Cadastros">
+        <menu>
+            <item android:id="@+id/mniAgendaPessoal"
+                android:title="Agenda Pessoal"></item>
+            <item android:id="@+id/mniAgendaProfissional"
+                android:title="Agenda Profissional"></item>
+        </menu>
+    </item>
+    <item android:id="@+id/mniRelatorios"
+        android:title="Relatórios">
+        <menu>
+            <item android:id="@+id/mniAPLista"
+                android:title="Agenda Pessoal Lista"></item>
+        </menu>
+    </item>
+    <item android:id="@+id/mniSair"
+        android:title="Sair"></item>
+</menu>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actAPConsultarLista">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="323dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:text="Agenda Pessoal Consultar Lista"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="Código:"
+        app:layout_constraintEnd_toStartOf="@+id/edtCodigo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Nome:"
+        app:layout_constraintEnd_toStartOf="@+id/edtNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigo" />
+
+    <TextView
+        android:id="@+id/txtCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:text="Celular:"
+        app:layout_constraintEnd_toStartOf="@+id/edtCelular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:text="Email:"
+        app:layout_constraintEnd_toStartOf="@+id/edtEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCelular" />
+
+    <EditText
+        android:id="@+id/edtCodigo"
+        android:layout_width="117dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Código"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/txtQtdCad"
+        app:layout_constraintStart_toEndOf="@+id/txtCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="317dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/edtCodigo" />
+
+    <EditText
+        android:id="@+id/edtCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Celular"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCelular"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Email "
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtCelular" />
+
+    <Button
+        android:id="@+id/btnAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:onClick="Anterior"
+        android:text="Anterior"
+        app:icon="@android:drawable/ic_media_rew"
+        app:iconGravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <Button
+        android:id="@+id/btnProximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:onClick="Proximo"
+        android:text="Próximo"
+        app:icon="@android:drawable/ic_media_ff"
+        app:iconGravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnAnterior"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <Button
+        android:id="@+id/btnFechar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        android:onClick="Sair"
+        android:text="Encerrar Consulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnterior" />
+
+    <TextView
+        android:id="@+id/txtQtdCad"
+        android:layout_width="112dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
