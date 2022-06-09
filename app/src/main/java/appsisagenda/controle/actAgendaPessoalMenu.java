@@ -36,6 +36,11 @@ public class actAgendaPessoalMenu extends AppCompatActivity {
                 startActivity(aplista);
                 //startActivity(new Intent(this,actAPConsultarLista.class));
                 break;
+            case R.id.mniLstCompleta:
+                Intent listacompleta = new Intent(this,actListaContatos.class);
+                startActivity(listacompleta);
+                //startActivity(new Intent(this,actAPConsultarLista.class));
+                break;
         }
         return true;
     }

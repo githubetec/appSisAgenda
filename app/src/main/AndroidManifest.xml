@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppSisAgenda">
-        <activity android:name=".actAPConsultarLista"></activity>
+        <activity
+            android:name=".actListaContatos"
+            android:exported="false" />
+        <activity android:name=".actAPConsultarLista" />
         <activity android:name=".actAgendaPessoalMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

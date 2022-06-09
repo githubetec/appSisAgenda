@@ -13,7 +13,11 @@
         android:title="Relatórios">
         <menu>
             <item android:id="@+id/mniAPLista"
-                android:title="Agenda Pessoal Lista"></item>
+                android:title="Agenda Pessoal Navegação">
+            </item>
+            <item android:id="@+id/mniLstCompleta"
+                android:title="Listagem de Cadastros">
+            </item>
         </menu>
     </item>
     <item android:id="@+id/mniSair"
